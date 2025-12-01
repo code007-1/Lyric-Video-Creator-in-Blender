@@ -32,7 +32,7 @@ def parse_srt(file_path):
 
 '''
 this part is not used right now has some bug, just for playing audio inside from blender
-so as of now load uadio manually or use some external player
+so as of now load audio manually or use some external player
 def ensure_vse():
     scene = bpy.context.scene
     if scene.sequence_editor is None:
@@ -176,14 +176,9 @@ keyframe_line_fades(mix, subs, fps)
 
 # Global storage for handler
 _handler_state = {
-    "subs": None,
-    "obj_name": "LyricText",
-    "last_idx": -1
+    "subs": subs,
+    "obj_name": obj.name if obj.name else "Lyric Text" ,
 }
 
-_handler_state["subs"] = subs
-_handler_state["obj_name"] = obj.name
-_handler_state["last_idx"] = -1
-
 install_handler()
-print(f"Installed karaoke handler. Lines: {len(subs)}. Audio loaded. FPS={fps}.")
+print(f"Imported {len(subs)} lyric lines")

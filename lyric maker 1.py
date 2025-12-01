@@ -110,4 +110,4 @@ def create_lyrics(subtitles):
 subs = parse_srt(srt_path)
 FPS = bpy.context.scene.render.fps
 create_lyrics(subs)
-print(f"Imported {len(subs)} lyric lines and loaded audio.")
+print(f"Imported {len(subs)} lyric lines")
