@@ -1,6 +1,8 @@
+# Lyric Video maker in blender - makes lyric video of a song or anything with srt file
+1. Lyric Maker 1 - uses only acutal materials for showing and hiding text (creates seperate text objects and material for every line of lyric)
+2. Lyric Maker 2 - uses frame change handler with material's fade in, fade out anination (uses single text object and single materials)
+
 ## Usage
-1. Lyric Maker 1 - uses only frame change handler (smiple one with no materials)
-2. Lyric Maker 2 - uses frame change handler with material's fade in, fade out anination (uses materials)
 
 1. Set `srt_path` to your SRT subtitle file path
 2. Set `START_FRAME` if needed (default: 1)
