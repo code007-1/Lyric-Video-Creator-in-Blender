@@ -1,4 +1,5 @@
-# Lyric Video maker in blender - makes lyric video of a song or anything with srt file
+# Lyric Video maker in blender
+## Makes lyric video of a song or anything with srt file
 1. Lyric Maker 1 - uses only acutal materials for showing and hiding text (creates seperate text objects and material for every line of lyric)
 2. Lyric Maker 2 - uses frame change handler with material's fade in, fade out anination (uses single text object and single materials)
 
